@@ -1,0 +1,19 @@
+body { min-height: 100vh; display: flex; flex-direction: column; }
+
+main{flex-grow: 1;} 
+
+hidden {
+  display: none !important;
+}
+
+
+.health-bar {
+  height: 5vh;
+}
+
+.background {
+  background-image: url("./streetfighter-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}

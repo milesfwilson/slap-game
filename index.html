@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Slap Game</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid bg-dark">
+  <header class="row">
+    <div class="col-12 bg-dark text-light text-center">
+      <h1>attck</h1>
+    </div>
+
+
+  </header>
+
+  <!-- MAIN  -->
+  <main class="">
+
+    <div class="row health-bar">
+      <div class="col-6 bg-danger d-flex align-items-center text-light">
+        <div class="bg-warning h-100 d-flex align-items-center" id="healthBar">
+          <h3 class="my-auto ml-3" id="hpCount"></h3>
+
+        </div>
+      </div>
+      <div class="col-6 bg-danger text-light">
+        <div class="bg-warning h-100 d-flex align-items-center" id="healthBarPlayer2">
+          <h3 class="my-auto ml-3" id="hpCountPlayer2"></h3>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- PLAYER 1 -->
+
+    <div class="row mb-3 background">
+      <div class="col-1">
+      </div>
+
+      <div class="col-5">
+        <div class="row">
+          <div class="col-12  text-light text-left">
+            <h1 id="playerName">Name: </h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 d-flex  text-light">
+            <h5 class="mr-1">Hit Count: </h5>
+            <h5 id="hits" class=""></h5>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- PLAYER 2 -->
+
+
+
+      <div class="col-5 text-light">
+        <div class="row">
+          <div class="col-12 text-light text-right">
+            <h1 id="player2Name">Name: </h1>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-right d-flex flex-row-reverse">
+
+            <h5 id="hitsPlayer2" class=""> </h5>
+            <h5 class="">Hit Count: </h5>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="col-1">
+
+      </div>
+
+    </div>
+
+
+    <!-- BUTTONS -->
+
+    <div class="row justify-content-center text-center my-5" id="btn-row">
+      <div class="col-3">
+        <button type="button" class="btn btn-primary btn-block" onclick="slap()">Slap</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary btn-block" onclick="kick()">Kick</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary btn-block" onclick="punch()">Punch</button>
+      </div>
+    </div>
+    <div class="row justify-content-center text-center my-3" id="btn-row">
+
+      <div class="col-3">
+        <button type="button" class="btn btn-primary btn-block" onclick="special('poisonPotion')">Poison Potion</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary btn-block" onclick="special('fireball')">FIREBALL</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary btn-block" onclick="special('healthPotion')">Health Potion</button>
+      </div>
+    </div>
+
+    <!-- RESET BUTTON /area -->
+
+    <div class="row my-5">
+      <div class="col-12 d-flex justify-content-center">
+        <button type="button" class="btn btn-danger w-50" onclick="reset()">Reset</button>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <footer class="row">
+    <div class="col-12 bg-dark text-light text-center">
+      <h1>attck</h1>
+    </div>
+
+
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
